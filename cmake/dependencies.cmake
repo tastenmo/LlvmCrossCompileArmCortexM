@@ -22,8 +22,9 @@ function(ProvideArmGnuToolchain)
 
     FetchContent_Declare(
         ArmGnuToolchain
-        URL https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2
-        URL_HASH MD5=2383e4eb4ea23f248d33adc70dc3227e
+        URL https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu/12.2.rel1/binrel/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi.tar.xz
+        #URL https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2
+        URL_HASH SHA256=84be93d0f9e96a15addd490b6e237f588c641c8afdf90e7610a628007fc96867
     )
 
     FetchContent_MakeAvailable(ArmGnuToolchain)
@@ -40,8 +41,9 @@ function(ProvideLlvmProject)
 
     FetchContent_Declare(
         LlvmProject
-        URL  https://github.com/llvm/llvm-project/releases/download/llvmorg-14.0.0/llvm-project-14.0.0.src.tar.xz
-        URL_HASH SHA256=35ce9edbc8f774fe07c8f4acdf89ec8ac695c8016c165dd86b8d10e7cba07e23
+        URL https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.0/llvm-project-16.0.0.src.tar.xz
+        #URL  https://github.com/llvm/llvm-project/releases/download/llvmorg-14.0.0/llvm-project-14.0.0.src.tar.xz
+        #URL_HASH SHA256=35ce9edbc8f774fe07c8f4acdf89ec8ac695c8016c165dd86b8d10e7cba07e23
     )
 
     FetchContent_MakeAvailable(LlvmProject)
